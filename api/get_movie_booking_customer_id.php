@@ -7,7 +7,7 @@ $db=new DBController();
 $user_id = $value->user_id;
 
 //for insert
-$sql="SELECT time_slot,movie_id,COUNT(seat_no) FROM tbl_booking WHERE user_id=?";
+$sql="SELECT *,COUNT(seat_no) FROM tbl_booking WHERE customer_id=?";
 $param_type="i";
 $indata=$db->select($sql,$param_type,[$user_id],"Success","Failure");
 
