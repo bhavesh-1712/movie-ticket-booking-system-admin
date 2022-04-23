@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - main
+name: 🚀 Deploy website on push
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+      with: 
+        fetch-depth: 2 
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: ftp.diplomaguru.co.in
+        username: u799378581.moviebooking
+        password: ${{ secrets.FTP_PASSWORD_MBS }}

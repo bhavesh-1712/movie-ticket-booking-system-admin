@@ -4,9 +4,13 @@ class DBController{
     public $queryObject;
     
     private $host = "localhost";
-    private $user = "root";
-    private $password = "";
-    private $database = "movie_ticket_booking";
+    // private $user = "root";
+    // private $password = "";
+    // private $database = "movie_ticket_booking";
+
+    private $user = "u799378581_movie_booking";
+    private $password = "MovieBooking@2021";
+    private $database = "u799378581_movie_booking";
     
     function __construct() {
         $this->con = mysqli_connect($this->host,$this->user,$this->password,$this->database);

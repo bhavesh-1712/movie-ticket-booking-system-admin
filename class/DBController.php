@@ -1,9 +1,13 @@
 <?php
 class DBController {
     private $host = "localhost";
-    private $user = "root";
-    private $password = "";
-    private $database = "movie_ticket_booking";
+    // private $user = "root";
+    // private $password = "";
+    // private $database = "movie_ticket_booking";
+
+    private $user = "u799378581_movie_booking";
+    private $password = "MovieBooking@2021";
+    private $database = "u799378581_movie_booking";
     private $conn;
     
     function __construct() {
