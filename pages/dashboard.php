@@ -62,9 +62,6 @@
 
                     <br>
                     <?php
-                    echo "<pre>";
-                    var_dump($bookingDetail);
-                    echo "</pre>";
                     $str = ['A','B','C','D','E','F','G','H','I','J'];
                     ?>
                     <?php 
