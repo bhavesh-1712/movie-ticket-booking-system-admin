@@ -75,7 +75,7 @@
                         <?php  for($row=0;$row<10;$row++){ 
                             for($col=0; $col<4;$col++){                            
                         ?>   
-                        <div style="display:inline;border:solid 1px black;width: 30px;"><?php echo $str[$row]; ?></span>
+                        <div style="display:inline;border:solid 1px black;width: 30px;"><?php echo $str[$row]; ?></div>
                         <?php } 
                         echo "<br>";
                     } ?>
