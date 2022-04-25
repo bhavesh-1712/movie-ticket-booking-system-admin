@@ -74,7 +74,7 @@
                         <h5 class="text-center"><?php echo $data['movie_name']; ?></h5>
                         <div class="row">
                             <div class="col-sm-4">
-                                <p>Time Sloat 1</p>
+                                <p class="text-center">Time Sloat 1</p>
                                 <?php  
                                     $count=1;
                                     for($row=0;$row<10;$row++){ 
@@ -97,7 +97,7 @@
                             </div>
 
                             <div class="col-sm-4">
-                                <p>Time Sloat 1</p>
+                                <p class="text-center">Time Sloat 2</p>
                                 <?php  
                                     $count=1;
                                     for($row=0;$row<10;$row++){ 
@@ -120,7 +120,7 @@
                             </div>
 
                             <div class="col-sm-4">
-                                <p>Time Sloat 1</p>
+                                <p class="text-center">Time Sloat 3</p>
                                 <?php  
                                     $count=1;
                                     for($row=0;$row<10;$row++){ 
