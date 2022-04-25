@@ -75,7 +75,7 @@
                         <?php  for($row=1;$row<=10;$row++){ 
                             for($col=1; $col<=4;$col++){                            
                         ?>   
-                        <span style="padding: 10px;border:solid 1px black;"><?php echo $str[$row]; ?></span>
+                        <span style="border:solid 1px black;"><?php echo $str[$row]; ?></span>
                         <?php } 
                         echo "<br>";
                     } ?>
