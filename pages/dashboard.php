@@ -70,7 +70,7 @@
                     <?php 
                     foreach($bookingDetail as $data){
                     ?>
-                    <h5><?php var_dump($data); ?></h5>
+                    <h5><?php echo $data['movie_name'] ?></h5>
                     <?php
                     }?>
                 </div>
