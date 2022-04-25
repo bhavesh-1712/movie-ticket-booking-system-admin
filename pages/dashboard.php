@@ -75,10 +75,9 @@
                             <div class="col-sm-4">
                                 <h5 class="text-center"><?php echo $data['movie_name']; ?></h5>
                                 <?php  for($row=0;$row<10;$row++){ 
-                                        for($col=0; $col<4;$col++){                            
-                                    ?>   
-                                    <div style="display:inline;border:solid 1px black;width: 100px;"><?php echo $str[$row]; ?></div>
-                                    <?php } 
+                                        for($col=0; $col<4;$col++){   
+                                            echo "<button class='btn' style='margin:2px;background-color:#FF0000'>A</button>";                         
+                                    } 
                                     echo "<br>";
                                 } ?>
                             </div>
