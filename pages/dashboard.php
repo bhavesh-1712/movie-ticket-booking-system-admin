@@ -72,8 +72,8 @@
                     ?>
                     <div class="container">
                         <h5 class="text-center"><?php echo $data['movie_name']; ?></h5>
-                        <?php  for($row=1;$row<=10;$row++){ 
-                            for($col=1; $col<=4;$col++){                            
+                        <?php  for($row=0;$row<10;$row++){ 
+                            for($col=0; $col<4;$col++){                            
                         ?>   
                         <span style="border:solid 1px black;"><?php echo $str[$row]; ?></span>
                         <?php } 
