@@ -66,7 +66,7 @@
                     var_dump($bookingDetail);
                     echo "</pre>";
                     $str = ['A','B','C','D','E','F','G','H','I','J'];
-                    ?>                   
+                    ?>
                     <?php 
                         foreach($bookingDetail as $data){
                     ?>
@@ -78,21 +78,25 @@
                                 <?php  
                                     $count=1;
                                     for($row=0;$row<10;$row++){ 
-                                        for($col=0; $col<4;$col++){   
+                                        for($col=0; $col<4;$col++){  
+                                            $flag=false; 
                                             foreach($data['booking_data'][3] as $seatData){ 
-                                               if($seatData['seat_no']==$count){
+                                                if($seatData['seat_no']==$count){
+                                                    $flag=true;
+                                                }
+                                            }   
+                                            if($flag){
                                                 echo "<button class='btn' style='margin:2px;background-color:#00FF00'>".$str[$row].($count++)."</button>";  
-                                               }
-                                               else{
+                                            }
+                                            else{
                                                 echo "<button class='btn' style='margin:2px;background-color:#FF0000'>".$str[$row].($count++)."</button>";  
-                                               }
-                                            }                       
+                                            }                    
                                         } 
                                          echo "<br>";
                                     } ?>
                             </div>
 
-                        </div>                      
+                        </div>
                     </div>
                     <?php
                     }?>
