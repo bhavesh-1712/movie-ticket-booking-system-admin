@@ -68,18 +68,24 @@
                     $str = ['A','B','C','D','E','F','G','H','I','J'];
                     ?>                   
                     <?php 
-                    foreach($bookingDetail as $data){
+                        foreach($bookingDetail as $data){
                     ?>
                     <div class="container">
+                        <h5 class="text-center"><?php echo $data['movie_name']; ?></h5>
                         <div class="row">
                             <div class="col-sm-4">
-                                <h5 class="text-center"><?php echo $data['movie_name']; ?></h5>
-                                <?php  for($row=0;$row<10;$row++){ 
+                                <p>Time Sloat 1</p>
+                                <?php  
+                                    $count=1;
+                                    for($row=0;$row<10;$row++){ 
                                         for($col=0; $col<4;$col++){   
-                                            echo "<button class='btn' style='margin:2px;background-color:#FF0000'>A</button>";                         
-                                    } 
-                                    echo "<br>";
-                                } ?>
+                                            foreach($data['booking_data'][3] as $seatData){ 
+                                            var_dump($seatData);
+                                            echo "<button class='btn' style='margin:2px;background-color:#FF0000'>A</button>";  
+                                            }                       
+                                        } 
+                                         echo "<br>";
+                                    } ?>
                             </div>
 
                         </div>                      
