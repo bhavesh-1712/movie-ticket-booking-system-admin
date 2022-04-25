@@ -86,15 +86,17 @@
                                                 }
                                             }   
                                             if($flag){
-                                                echo "<button class='btn text-center' style='margin:2px;width:40px;background-color:#00FF00'>".$str[$row].($count++)."</button>";  
+                                                echo "<button class='btn text-center' style='margin:2px;width:60px;background-color:#00FF00'>".$str[$row].($count++)."</button>";  
                                             }
                                             else{
-                                                echo "<button class='btn text-center' style='margin:2px;width:40px;background-color:#FF0000'>".$str[$row].($count++)."</button>";  
+                                                echo "<button class='btn text-center' style='margin:2px;width:60px;background-color:#FF0000'>".$str[$row].($count++)."</button>";  
                                             }                    
                                         } 
                                          echo "<br>";
                                     } ?>
                             </div>
+
+
 
                         </div>
                     </div>
