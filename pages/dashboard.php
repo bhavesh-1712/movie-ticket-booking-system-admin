@@ -80,8 +80,7 @@
                                     for($row=0;$row<10;$row++){ 
                                         for($col=0; $col<4;$col++){   
                                             foreach($data['booking_data'][3] as $seatData){ 
-                                            var_dump($seatData);
-                                            echo "<button class='btn' style='margin:2px;background-color:#FF0000'>A</button>";  
+                                                echo "<button class='btn' style='margin:2px;background-color:#FF0000'>".$str[$row].($count++)."</button>";  
                                             }                       
                                         } 
                                          echo "<br>";
