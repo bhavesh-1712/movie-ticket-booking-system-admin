@@ -86,10 +86,10 @@
                                                 }
                                             }   
                                             if($flag){
-                                                echo "<button class='btn text-center' style='margin:2px;width:60px;background-color:#00FF00'>".$str[$row].($count++)."</button>";  
+                                                echo "<button class='btn text-center' style='margin:2px;width:80px;background-color:#00FF00'>".$str[$row].($count++)."</button>";  
                                             }
                                             else{
-                                                echo "<button class='btn text-center' style='margin:2px;width:60px;background-color:#FF0000'>".$str[$row].($count++)."</button>";  
+                                                echo "<button class='btn text-center' style='margin:2px;width:80px;background-color:#FF0000'>".$str[$row].($count++)."</button>";  
                                             }                    
                                         } 
                                          echo "<br>";
