@@ -66,103 +66,13 @@
                     var_dump($bookingDetail);
                     echo "</pre>";
                     $str = ['A','B','C','D','E','F','G','H','I','J'];
+                    ?>                   
+                    <?php 
+                    foreach($bookingDetail as $data){
                     ?>
+                    <h5><?php var_dump($data); ?></h5>
                     <?php
-                    for($i = 0; $i < COUNT($bookingDetail['movie']); $i++){
-                    ?>
-                    <h3><?php echo $bookingDetail['movie'][$i]['movie_name'];?></h3>
-                    <div class="row">
-                        <div class="col-md-4 text-center">
-                            <h5>09:00:00 to 12:00:00</h5>
-                            <?php
-                                $count = 1;
-                                $slotId = 3;
-                                for($k = 0; $k < 10; $k++){
-                                    for($j = 0; $j < 4; $j++){
-                                        if(isset($bookingDetail['movie'][$i]['booking_data'][$j])){
-                                                if($bookingDetail['movie'][$i]['booking_data'][$j]['time_slot'] == $slotId){
-                                                    if($count == $bookingDetail['movie'][$i]['booking_data'][$j]['seat_no']){
-                                                        echo "<button class='btn' style='margin:2px;background-color:#FF0000' value='".$str[$k]."".$count."'>".$str[$k]."".$count."</button>";
-                                                        $count++;
-                                                    }else{
-                                                        echo "<button class='btn' style='margin:2px;background-color:#00FF00' value='".$str[$k]."".$count."'>".$str[$k]."".$count."</button>";
-                                                        $count++;
-                                                    }
-                                                }else{
-                                                    echo "<button class='btn' style='margin:2px;background-color:#00FF00' value='".$str[$k]."".$count."'>".$str[$k]."".$count."</button>";
-                                                    $count++;
-                                                }
-                                        }else{
-                                            echo "<button class='btn' style='margin:2px;background-color:#00FF00' value='".$str[$k]."".$count."'>".$str[$k]."".$count."</button>";
-                                            $count++;
-                                        }
-                                    }
-                                }
-                            ?>
-                        </div>
-                        <div class="col-md-4 text-center">
-                        <h5>13:00:00 to 16:00:00</h5>
-                            <?php
-                                $count = 1;
-                                $slotId = 4;
-                                for($k = 0; $k < 10; $k++){
-                                    for($j = 0; $j < 4; $j++){
-                                        if(isset($bookingDetail['movie'][$i]['booking_data'][$j])){
-                                                if($bookingDetail['movie'][$i]['booking_data'][$j]['time_slot'] == $slotId){
-                                                    if($count == $bookingDetail['movie'][$i]['booking_data'][$j]['seat_no']){
-                                                        echo "<button class='btn' style='margin:2px;background-color:#FF0000' value='".$str[$k]."".$count."'>".$str[$k]."".$count."</button>";
-                                                        $count++;
-                                                    }else{
-                                                        echo "<button class='btn' style='margin:2px;background-color:#00FF00' value='".$str[$k]."".$count."'>".$str[$k]."".$count."</button>";
-                                                        $count++;
-                                                    }
-                                                }else{
-                                                    echo "<button class='btn' style='margin:2px;background-color:#00FF00' value='".$str[$k]."".$count."'>".$str[$k]."".$count."</button>";
-                                                    $count++;
-                                                }
-                                        }else{
-                                            echo "<button class='btn' style='margin:2px;background-color:#00FF00' value='".$str[$k]."".$count."'>".$str[$k]."".$count."</button>";
-                                            $count++;
-                                        }
-                                    }
-                                }
-                            ?>
-                        </div>
-                        <div class="col-md-4 text-center">
-                        <h5>18:00:00 to 21:00:00</h5>
-                            <?php
-                                $count = 1;
-                                $slotId = 5;
-                                for($k = 0; $k < 10; $k++){
-                                    for($j = 0; $j < 4; $j++){
-                                        if(isset($bookingDetail['movie'][$i]['booking_data'][$j])){
-                                                if($bookingDetail['movie'][$i]['booking_data'][$j]['time_slot'] == $slotId){
-                                                    if($count == $bookingDetail['movie'][$i]['booking_data'][$j]['seat_no']){
-                                                        echo "<button class='btn' style='margin:2px;background-color:#FF0000' value='".$str[$k]."".$count."'>".$str[$k]."".$count."</button>";
-                                                        $count++;
-                                                    }else{
-                                                        echo "<button class='btn' style='margin:2px;background-color:#00FF00' value='".$str[$k]."".$count."'>".$str[$k]."".$count."</button>";
-                                                        $count++;
-                                                    }
-                                                }else{
-                                                    echo "<button class='btn' style='margin:2px;background-color:#00FF00' value='".$str[$k]."".$count."'>".$str[$k]."".$count."</button>";
-                                                    $count++;
-                                                }
-                                        }else{
-                                            echo "<button class='btn' style='margin:2px;background-color:#00FF00' value='".$str[$k]."".$count."'>".$str[$k]."".$count."</button>";
-                                            $count++;
-                                        }
-                                    }
-                                }
-                            ?>
-                        </div>
-                    </div>
-                    <br></br>   
-                    <?php
-                    }
-                    ?>
-                    
-
+                    }?>
                 </div>
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
