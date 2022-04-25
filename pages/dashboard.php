@@ -70,7 +70,14 @@
                     <?php 
                     foreach($bookingDetail as $data){
                     ?>
-                    <h5><?php echo $data['movie_name']; ?></h5>
+                    <div class="container">
+                        <h5 class="text-center"><?php echo $data['movie_name']; ?></h5>
+                        <?php for($col=1; $col<=4;$col++){ 
+                                for($row=1;$row<=10;$row++){                            
+                        ?>   
+                        <span style="padding: 10px;border:solid 1px black;">A</span>
+                        <?php } } ?>
+                    </div>
                     <?php
                     }?>
                 </div>
